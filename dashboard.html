@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - UTS Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>Menu</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item active">
+                    Dashboard
+                </a>
+                <a href="products.html" class="nav-item">
+                    Products
+                </a>
+                <a href="index.html" class="nav-item logout">
+                    Logout
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="container">
+                <header>
+                    <h1>Dashboard</h1>
+                </header>
+
+                <div class="dashboard">
+                    <div class="cards">
+                        <div class="card">
+                            <h3>Total Products</h3>
+                            <div class="number" id="totalProducts">120</div>
+                        </div>
+                        <div class="card">
+                            <h3>Total Sales</h3>
+                            <div class="number" id="totalSales">85</div>
+                        </div>
+                        <div class="card">
+                            <h3>Total Revenue</h3>
+                            <div class="number" id="totalRevenue">Rp 12.500.000</div>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button onclick="window.location.href='products.html'" class="btn-primary">
+                            Lihat Data Produk
+                        </button>
+                        <button onclick="window.location.href='index.html'" class="btn-secondary">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
